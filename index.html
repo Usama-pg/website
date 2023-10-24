@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2em;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 1em;
+            margin: 1em;
+            width: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple E-commerce</h1>
+    </header>
+
+    <section>
+        <div class="product">
+            <h2>Product 1</h2>
+            <p>Description of Product 1.</p>
+            <p>Price: $19.99</p>
+            <button onclick="addToCart('Product 1', 19.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h2>Product 2</h2>
+            <p>Description of Product 2.</p>
+            <p>Price: $29.99</p>
+            <button onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
+        </div>
+
+        <!-- Add more product divs as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Simple E-commerce</p>
+    </footer>
+
+    <script>
+        function addToCart(productName, price) {
+            alert(`Added ${productName} to cart. Total Price: $${price}`);
+            // You like like would typically implement cart functionality here
+        }
+    </script>
+</body>
+</html>
